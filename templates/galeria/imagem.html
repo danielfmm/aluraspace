@@ -6,7 +6,7 @@
                 <div class="imagem__conteudo">
                     <a href="{% url 'imagem' fotografia.id %}">
                         {% if fotografia.foto == "" or fotografia.foto == null %}
-                            <img class="imagem__imagem" src="{% static '/assets/imagens/galeria/not_found.png'%}" alt="foto">
+                            <img class="imagem__imagem" src="{% static 'assets/imagens/galeria/not_found.png'%}" alt="foto">
                         {% else %}
                             <img class="imagem__imagem" src="{{ fotografia.foto.url }}" alt="foto">
                         {% endif %}
